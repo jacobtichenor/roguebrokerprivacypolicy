@@ -29,12 +29,16 @@
 <body>
 
 <h1>Privacy Policy — Rogue Broker</h1>
-<p class="updated">Last updated: 3 August 2026</p>
+<p class="updated">Last updated: 17 August 2026</p>
 
-<p>Rogue Broker does not collect, transmit, sell, or share any personal information. There are
-no accounts to create, no advertising, and no third-party SDKs of any kind.</p>
-<p>It can optionally send anonymous <em>balance data</em> — how a run went but only if you
-switch that on yourself. See below.</p>
+<p>Rogue Broker does not collect or transmit any personal information on its own. There are no
+accounts to create, no advertising, no analytics service and no third-party SDKs of any kind. The
+game never sends anything in the background.</p>
+<p>There are two places where you can choose to send something to the developer, and both work the
+same way: the app prepares a draft in your own email app, you read it, you edit or delete anything
+you would rather not send, and you press send. Nothing leaves your device unless you do. Because
+these are ordinary emails, the address you send from is visible to the developer. Both are
+described under <a href="#email">Email you choose to send</a>.</p>
 
 <h2>What the app stores</h2>
 <p>Everything the game needs is written to a file inside the app's own storage on your device:
@@ -50,24 +54,38 @@ Apple Account. The developer cannot read it, cannot access it, and receives no c
 game works exactly as it does offline, saving only to the device, and syncs by itself later if a
 connection becomes available.</p>
 
-<h2>Balance data (off unless you turn it on)</h2>
-<p>Rogue Broker has a <strong>Share balance data</strong> switch in Settings. It is
-<strong>off by default</strong> and nothing is sent, or even recorded on your device, unless
-you turn it on.</p>
-<p>With it on, a record is sent when a run ends containing only: your net worth at the close of
-each trading day, the quota each sector demanded and what you were worth when it collected,
-which relics, devices and ship refits you bought and when, any margin calls along with the size
-and side of the position that caused each one, which captain and rank you played, and how far the
-run got. It is used for one thing tuning how hard the game is.</p>
-<p>It does <strong>not</strong> include your name, email, Apple ID, location, device model, any
-advertising identifier, or anything you typed. There is no account and no third-party analytics
-service.</p>
-<p>Records go to the app's own iCloud database. Apple stamps each one with an identifier it
-assigns per app, which cannot be resolved to your Apple ID or name but it is stable, so
-several runs from one device are visibly the same device. That is <em>pseudonymous</em> rather
-than strictly anonymous, and it is described here rather than glossed over.</p>
-<p>Turning the switch off stops it immediately and discards anything not yet sent. Erasing your
-profile does the same.</p>
+<h2>Run data (off unless you turn it on)</h2>
+<p>Rogue Broker has a <strong>Share run data</strong> switch in Settings. It is <strong>off by
+default</strong> and nothing is recorded unless you turn it on.</p>
+<p>With it on, the game keeps a record on your device when a run ends, containing only: your net
+worth at the close of each trading day, the quota each sector demanded and what you were worth
+when it collected, which relics, devices and ship refits you bought and when, any margin calls
+along with the size and side of the position that caused each one, which captain and rank you
+played, and how far the run got. It is used for one thing — tuning how hard the game is.</p>
+<p>It does <strong>not</strong> include your name, email address, Apple ID, location, device
+model, any advertising identifier, or anything you typed.</p>
+<p><strong>This record stays on your device.</strong> The game does not upload it. Settings shows
+how many runs are stored and gives you three things to do with them: <strong>SEND</strong>, which
+prepares an email to the developer with the file attached; <strong>EXPORT</strong>, which hands
+the file to the iOS share sheet so you can save it or send it wherever you like; and
+<strong>CLEAR</strong>, which deletes it.</p>
+<p>Turning the switch off deletes anything already recorded. Erasing your profile does the
+same.</p>
+
+<h2 id="email">Email you choose to send</h2>
+<p>Two features in the app prepare an email for you. In both cases the app only opens a draft —
+it cannot send mail by itself, you can read and edit every part of it first, and cancelling sends
+nothing.</p>
+<p><strong>Reporting a bug.</strong> Settings offers <em>Report a bug</em>. The draft contains
+what you wrote, plus details of the run you were playing so the problem can be reproduced: the run
+seed, captain, rank, sector and day, net worth, the quota due, which relics you held, and the app
+and iOS version. All of it is shown on screen before you send. This is available whether or not
+<em>Share run data</em> is switched on.</p>
+<p><strong>Sending run data.</strong> If <em>Share run data</em> is on, the SEND button attaches
+the stored run file described above to a draft addressed to the developer.</p>
+<p>In both cases the email carries your own email address, because that is how email works. It is
+used only to read what you sent and to reply to you. It is not added to any mailing list, not
+shared with anyone, and not used for anything else.</p>
 
 <h2>Game Center</h2>
 <p>If you sign in to Game Center, Daily Challenge scores and achievements are submitted to
@@ -79,16 +97,18 @@ has no effect on the game other than hiding the leaderboard.</p>
 <ul>
   <li>No advertising, ad networks, or ad identifiers (no IDFA)</li>
   <li>No crash reporting and no third-party analytics service</li>
-  <li>No usage tracking beyond the opt-in balance data described below</li>
+  <li>No usage tracking beyond the opt-in run data described above</li>
   <li>No third-party SDKs or libraries</li>
-  <li>No account creation, email address, or password</li>
+  <li>No account to create, no password, and no email address requested or stored by the app</li>
+  <li>No background uploads — nothing is transmitted to the developer unless you send it</li>
   <li>No access to your location, contacts, photos, camera, microphone, calendar, or health data</li>
   <li>No data is ever sold or shared with anyone</li>
 </ul>
 
 <h2>Children</h2>
-<p>Rogue Broker does not knowingly collect information from anyone, of any age, because it does
-not collect information at all.</p>
+<p>Rogue Broker does not knowingly collect information from anyone, of any age. The game collects
+nothing on its own, and the only information the developer ever receives is what someone chooses
+to put in an email and send.</p>
 
 <h2>Changes</h2>
 <p>If this policy changes, the updated version will be posted here and the date above revised.
@@ -100,7 +120,7 @@ here first.</p>
 
 <footer>
   <p><a href="index.html">Rogue Broker support</a></p>
-Rogue Broker — Copyright © 2026 Jacob Tichenor. All rights reserved.</footer>
+  Rogue Broker — Copyright © 2026 Jacob Tichenor. All rights reserved.</footer>
 
 </body>
 </html>
