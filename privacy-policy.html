@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Privacy Policy — Rogue Broker</title>
+<title>Rogue Broker Privacy Policy</title>
 <style>
   :root { color-scheme: light dark; }
   body {
@@ -28,17 +28,21 @@
 </head>
 <body>
 
-<h1>Privacy Policy — Rogue Broker</h1>
-<p class="updated">Last updated: 17 August 2026</p>
+<h1>Rogue Broker Privacy Policy</h1>
+<p class="updated">Last updated: 18 August 2026</p>
 
-<p>Rogue Broker does not collect or transmit any personal information on its own. There are no
-accounts to create, no advertising, no analytics service and no third-party SDKs of any kind. The
-game never sends anything in the background.</p>
-<p>There are two places where you can choose to send something to the developer, and both work the
-same way: the app prepares a draft in your own email app, you read it, you edit or delete anything
-you would rather not send, and you press send. Nothing leaves your device unless you do. Because
-these are ordinary emails, the address you send from is visible to the developer. Both are
-described under <a href="#email">Email you choose to send</a>.</p>
+<p>Rogue Broker does not collect or transmit any personal information. There are no accounts to
+create, no advertising, no analytics service and no third-party SDKs of any kind.</p>
+<p>One switch in Settings changes that. <strong>Share run data</strong>
+is <strong>on during the closed beta</strong>; with it on, the game sends the developer an anonymous
+record of how each run went, so the game's difficulty can be tuned against real play instead of
+guesswork. You can turn it off at any time, in Settings, and nothing further is sent. It is
+described in full under <a href="#rundata">Run data</a>. Nothing else is ever sent in the
+background.</p>
+<p>Separately, you can choose to email the developer from inside the app. The app prepares a draft,
+you read it, you edit or delete anything you would rather not send, and you press send. The app cannot
+send mail by itself. Because these are ordinary emails, the address you send from is visible to the
+developer. See <a href="#email">Email you choose to send</a>.</p>
 
 <h2>What the app stores</h2>
 <p>Everything the game needs is written to a file inside the app's own storage on your device:
@@ -54,35 +58,57 @@ Apple Account. The developer cannot read it, cannot access it, and receives no c
 game works exactly as it does offline, saving only to the device, and syncs by itself later if a
 connection becomes available.</p>
 
-<h2>Run data (off unless you turn it on)</h2>
-<p>Rogue Broker has a <strong>Share run data</strong> switch in Settings. It is <strong>off by
-default</strong> and nothing is recorded unless you turn it on.</p>
-<p>With it on, the game keeps a record on your device when a run ends, containing only: your net
-worth at the close of each trading day, the quota each sector demanded and what you were worth
-when it collected, which relics, devices and ship refits you bought and when, any margin calls
-along with the size and side of the position that caused each one, which captain and rank you
-played, and how far the run got. It is used for one thing — tuning how hard the game is.</p>
+<h2 id="rundata">Run data</h2>
+<p>Rogue Broker has a <strong>Share run data</strong> switch in Settings. During the closed beta it
+is <strong>on</strong>, so that a small invited group's play can be measured against the game's
+difficulty. Turn it off and nothing further is recorded or sent.</p>
+<p>With it on, the game makes a record when a run ends. It describes the game you played, and
+nothing else. In full, that is:</p>
+<ul>
+  <li>your net worth at the close of each trading day</li>
+  <li>what the run opened with, what it was worth when it stopped, and its highest point</li>
+  <li>the quota each sector demanded, what you were worth when it collected, and what was still
+      owed at the end</li>
+  <li>which relics, devices and ship refits you bought and when, and which you still had
+      equipped</li>
+  <li>any margin calls, with the size and side of the position that caused each one</li>
+  <li>which captain and rank you played</li>
+  <li>how many days you traded and how many contracts you filled</li>
+  <li>whether it was a Daily Challenge, and the market settings that run was given</li>
+  <li>which permanent upgrades your profile had bought</li>
+</ul>
+<p>It is used for one thing: working out how hard the game is.</p>
 <p>It does <strong>not</strong> include your name, email address, Apple ID, location, device
-model, any advertising identifier, or anything you typed.</p>
-<p><strong>This record stays on your device.</strong> The game does not upload it. Settings shows
-how many runs are stored and gives you three things to do with them: <strong>SEND</strong>, which
-prepares an email to the developer with the file attached; <strong>EXPORT</strong>, which hands
-the file to the iOS share sheet so you can save it or send it wherever you like; and
-<strong>CLEAR</strong>, which deletes it.</p>
-<p>Turning the switch off deletes anything already recorded. Erasing your profile does the
-same.</p>
+model, any advertising identifier, anything you typed, or the seed of the board you played.</p>
+<p><strong>Where it goes.</strong> The record is written to your device and also sent to the
+developer's own iCloud database, using Apple's CloudKit. It is sent when the run ends; if you have
+no connection at the time it waits on your device and goes when one is available, or is dropped if
+too many pile up. Nothing else in the app is transmitted this way.</p>
+<p><strong>On the word "anonymous".</strong> The record carries no identifier of yours, and each
+run is stamped with a fresh random number that cannot be matched to any other run. Apple does,
+however, stamp records in a developer's database with an identifier it assigns per app. That
+identifier cannot be resolved to your Apple Account, your name or your email. It is stable,
+though, so several runs sent from one device are visibly from the same device. That is
+<em>pseudonymous</em> rather than strictly anonymous, and it is written here rather than glossed
+over.</p>
+<p><strong>Your copy.</strong> The same records are kept on your device. Settings shows how many
+there are and gives you three things to do with them: <strong>SEND</strong>, which prepares an
+email to the developer with the file attached; <strong>EXPORT</strong>, which hands the file to
+the iOS share sheet so you can save it or send it wherever you like; and <strong>CLEAR</strong>,
+which deletes your copy.</p>
+<p>Turning the switch off stops it immediately, and deletes both anything waiting to be sent and
+the copy on your device. Erasing your profile does the same. Records already sent are on the
+developer's side; if you want those removed as well, email the address at the bottom of this
+page.</p>
 
 <h2 id="email">Email you choose to send</h2>
-<p>Two features in the app prepare an email for you. In both cases the app only opens a draft —
-it cannot send mail by itself, you can read and edit every part of it first, and cancelling sends
-nothing.</p>
+<p>Two features in the app prepare an email for you. In both cases the app only opens a draft.
+You can read and edit every part of it first, and cancelling sends nothing.</p>
 <p><strong>Reporting a bug.</strong> Settings offers <em>Report a bug</em>. The draft contains
 what you wrote, plus details of the run you were playing so the problem can be reproduced: the run
 seed, captain, rank, sector and day, net worth, the quota due, which relics you held, and the app
 and iOS version. All of it is shown on screen before you send. This is available whether or not
 <em>Share run data</em> is switched on.</p>
-<p><strong>Sending run data.</strong> If <em>Share run data</em> is on, the SEND button attaches
-the stored run file described above to a draft addressed to the developer.</p>
 <p>In both cases the email carries your own email address, because that is how email works. It is
 used only to read what you sent and to reply to you. It is not added to any mailing list, not
 shared with anyone, and not used for anything else.</p>
@@ -97,18 +123,21 @@ has no effect on the game other than hiding the leaderboard.</p>
 <ul>
   <li>No advertising, ad networks, or ad identifiers (no IDFA)</li>
   <li>No crash reporting and no third-party analytics service</li>
-  <li>No usage tracking beyond the opt-in run data described above</li>
+  <li>No usage tracking beyond the opt-in run data described above. The game does not report what
+      you tap, when you play, or how long for</li>
   <li>No third-party SDKs or libraries</li>
   <li>No account to create, no password, and no email address requested or stored by the app</li>
-  <li>No background uploads — nothing is transmitted to the developer unless you send it</li>
+  <li>Nothing is transmitted in the background except the opt-in run data described above, and
+      only while that switch is on</li>
   <li>No access to your location, contacts, photos, camera, microphone, calendar, or health data</li>
   <li>No data is ever sold or shared with anyone</li>
 </ul>
 
 <h2>Children</h2>
-<p>Rogue Broker does not knowingly collect information from anyone, of any age. The game collects
-nothing on its own, and the only information the developer ever receives is what someone chooses
-to put in an email and send.</p>
+<p>Rogue Broker does not knowingly collect personal information from anyone, of any age. It asks
+for none, and there is none in a run record: the only things the developer ever receives are the
+anonymous run data described above, if that switch has been turned on, and whatever someone
+chooses to put in an email and send.</p>
 
 <h2>Changes</h2>
 <p>If this policy changes, the updated version will be posted here and the date above revised.
@@ -120,7 +149,7 @@ here first.</p>
 
 <footer>
   <p><a href="index.html">Rogue Broker support</a></p>
-  Rogue Broker — Copyright © 2026 Jacob Tichenor. All rights reserved.</footer>
+  Rogue Broker. Copyright © 2026. All rights reserved.</footer>
 
 </body>
 </html>
