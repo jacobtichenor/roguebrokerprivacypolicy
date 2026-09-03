@@ -29,16 +29,24 @@
 <body>
 
 <h1>Rogue Broker Privacy Policy</h1>
-<p class="updated">Last updated: 18 August 2026</p>
+<p class="updated">Last updated: 2 September 2026</p>
 
 <p>Rogue Broker does not collect or transmit any personal information. There are no accounts to
-create, no advertising, no analytics service and no third-party SDKs of any kind.</p>
-<p>One switch in Settings changes that. <strong>Share run data</strong>
-is <strong>on during the closed beta</strong>; with it on, the game sends the developer an anonymous
-record of how each run went, so the game's difficulty can be tuned against real play instead of
-guesswork. You can turn it off at any time, in Settings, and nothing further is sent. It is
-described in full under <a href="#rundata">Run data</a>. Nothing else is ever sent in the
-background.</p>
+create, no advertising, and no analytics service.</p>
+<p>The app is built with one small open-source library &mdash;
+<a href="https://github.com/EmergeTools/Pow">Pow</a> &mdash; which draws some of the
+interface's animation. It is code that ships inside the app, not a service. <strong>It does not
+collect data, contact a server, or get told anything about you.</strong> It is named here because
+an earlier version of this policy said the app contained no third-party libraries at all, and
+that stopped being true.</p>
+<p>One switch in Settings changes what is sent. <strong>Share run data</strong>
+starts <strong>on if you installed through TestFlight and off if you downloaded it from the App
+Store</strong>; with it on, the game sends the developer a record of how each run went, so the
+game's difficulty can be tuned against real play instead of guesswork. You can turn it off at any
+time, in Settings, and nothing further is sent. It is
+described in full under <a href="#rundata">Run data</a>. Nothing else is sent to the developer in
+the background &mdash; the only other transmissions are the iCloud sync and Game Center
+submissions described below, and those go to Apple, not to the developer.</p>
 <p>Separately, you can choose to email the developer from inside the app. The app prepares a draft,
 you read it, you edit or delete anything you would rather not send, and you press send. The app cannot
 send mail by itself. Because these are ordinary emails, the address you send from is visible to the
@@ -57,41 +65,64 @@ Apple Account. The developer cannot read it, cannot access it, and receives no c
 <p>Sync is optional and automatic. With no internet connection or signed out of iCloud the
 game works exactly as it does offline, saving only to the device, and syncs by itself later if a
 connection becomes available.</p>
+<p>Deleting the app leaves that iCloud copy in your account, and it comes back if you reinstall.
+Erasing your profile in Settings deletes it too &mdash; the erase reaches the cloud copy even if
+it has to wait for a connection.</p>
 
 <h2 id="rundata">Run data</h2>
-<p>Rogue Broker has a <strong>Share run data</strong> switch in Settings. During the closed beta it
-is <strong>on</strong>, so that a small invited group's play can be measured against the game's
-difficulty. Turn it off and nothing further is recorded or sent.</p>
+<p>Rogue Broker has a <strong>Share run data</strong> switch in Settings. It starts
+<strong>on</strong> if you installed the game through TestFlight — a test build exists to be
+measured, and its testers volunteered for exactly that — and <strong>off</strong> if you bought
+it from the App Store. Settings says which, on the switch itself. Turn it off and nothing
+further is recorded or sent; turn it on and it resumes.</p>
 <p>With it on, the game makes a record when a run ends. It describes the game you played, and
 nothing else. In full, that is:</p>
 <ul>
   <li>your net worth at the close of each trading day</li>
   <li>what the run opened with, what it was worth when it stopped, and its highest point</li>
-  <li>the quota each sector demanded, what you were worth when it collected, and what was still
-      owed at the end</li>
-  <li>which relics, devices and ship refits you bought and when, and which you still had
-      equipped</li>
-  <li>any margin calls, with the size and side of the position that caused each one</li>
+  <li>which sectors the run visited, the quota each one demanded, what you were worth when it
+      collected, what was still owed at the end, and the total handed over across the run</li>
+  <li>whether you settled a sector early instead of trading it to its last day</li>
+  <li>which relics, devices and ship refits you bought, when, and at what in-game price, and
+      which relics you still held at the end</li>
+  <li>any margin calls &mdash; the size and side of the position that caused each one, your net
+      worth just before and after, the leverage you were running, how many positions it closed,
+      which day it landed on, and how soon it followed your last order</li>
   <li>which captain and rank you played</li>
   <li>how many days you traded and how many contracts you filled</li>
   <li>whether it was a Daily Challenge, and the market settings that run was given</li>
-  <li>which permanent upgrades your profile had bought</li>
+  <li>which permanent upgrades your profile had bought, how many relic slots it carried, and the
+      highest rank it had unlocked</li>
   <li>how the run ended, and how many Data Cores it paid</li>
   <li>the seed of the board you played, which names the market, not you</li>
-  <li>whether Fast market was switched on, since it changes how long a day lasts</li>
+  <li>whether Fast market was switched on, since it changes how long a day lasts, and which of
+      the three market speeds you had chosen, since that does too</li>
+  <li>whether it was your profile's first run, which the game eases</li>
   <li>how many runs your profile had played, and whether you had been through the walkthrough</li>
-  <li>which version, build and platform of the game you were playing</li>
+  <li>which version, build and platform of the game you were playing, and the record's own
+      format version</li>
+  <li>how you traded: how many orders filled and how many closed a position, how many
+      shorts you opened, what you made or lost on closes, what you paid in spread and
+      commission, your best and worst single trade, how much intel and how many rerolls you
+      bought, and how many devices you actually used</li>
+  <li>which listings you traded and how each one did — including the best and worst of them by
+      percentage — named by their ticker in the game, such as BOLT or SCRP</li>
+  <li>how long the run took in real time, measured from the first bell to the end, and the date
+      and time it ended</li>
 </ul>
 <p>It is used for one thing: working out how hard the game is.</p>
 <p>It does <strong>not</strong> include your name, email address, Apple ID, location, device
 model, any advertising identifier, or anything you typed.</p>
-<p><strong>On the seed.</strong> Earlier versions of this policy said the seed was not recorded,
-and it now is, so the change is stated plainly rather than quietly edited out. A seed names a
+<p><strong>On the seed.</strong> Earlier versions of this policy said the seed was not recorded.
+It is, and has been since the record's ninth revision, so the change is stated plainly rather
+than quietly edited out. A seed names a
 board. For a Daily Challenge it is a date that every player in the world shares, which is what
 lets the difficulty of one fixed board be measured across the people who played it. For an
 ordinary run it is drawn fresh each time from the clock and a random number, with nothing about
 your device or account anywhere in it, so two runs sent from one phone have no more in common
-than two runs from two phones.</p>
+than two runs from two phones. A seed you type yourself into the optional Seed box is
+<strong>not</strong> recorded — that box is free text, and the promise above that nothing you
+typed is sent is meant literally.</p>
 <p><strong>Where it goes.</strong> The record is written to your device and also sent to the
 developer's own iCloud database, using Apple's CloudKit. It is sent when the run ends; if you have
 no connection at the time it waits on your device and goes when one is available, or is dropped if
@@ -112,15 +143,30 @@ the copy on your device. Erasing your profile does the same. Records already sen
 developer's side; if you want those removed as well, email the address at the bottom of this
 page.</p>
 
+<h2 id="purchases">Purchases</h2>
+<p>Rogue Broker sells two things: the full version, which removes the free-run limit, and a
+one-time pack of Data Cores. Both are handled entirely by Apple's own in-app purchase system.</p>
+<p><strong>The developer never sees your payment details.</strong> Your card, your Apple Account,
+your name and your billing address are between you and Apple; the app has no access to any of it
+and never receives it. What the app is told is whether this Apple Account owns each product —
+nothing more.</p>
+<p>That answer is read back from Apple each launch and each return to the app; a purchase
+follows you to a new phone because it is tied to your Apple Account, not to anything the app
+stores. The Data Core pack's credited cores live in your save file and sync through your
+<em>own private</em> iCloud database like the rest of it. <strong>RESTORE PURCHASES</strong> in Settings, and
+<strong>RESTORE</strong> on either purchase screen, asks Apple again from scratch.</p>
+<p>Nothing about purchases is included in run data. A shared run record does not say what you
+bought with real money, or whether you bought anything at all.</p>
+
 <h2 id="email">Email you choose to send</h2>
-<p>Two features in the app prepare an email for you. In both cases the app only opens a draft.
-You can read and edit every part of it first, and cancelling sends nothing.</p>
+<p>One feature in the app prepares an email for you. It only opens a draft: you can read and
+edit every part of it first, and cancelling sends nothing.</p>
 <p><strong>Reporting a bug.</strong> Settings offers <em>Report a bug</em>. The draft contains
 what you wrote, plus details of the run you were playing so the problem can be reproduced: the run
 seed, captain, rank, sector and day, net worth, the quota due, which relics you held, and the app
 and iOS version. All of it is shown on screen before you send. This is available whether or not
 <em>Share run data</em> is switched on.</p>
-<p>In both cases the email carries your own email address, because that is how email works. It is
+<p>The email carries your own email address, because that is how email works. It is
 used only to read what you sent and to reply to you. It is not added to any mailing list, not
 shared with anyone, and not used for anything else.</p>
 
@@ -136,13 +182,20 @@ plays identically either way, and a score that cannot be submitted is simply not
   <li>No advertising, ad networks, or ad identifiers (no IDFA)</li>
   <li>No crash reporting and no third-party analytics service</li>
   <li>No usage tracking beyond the opt-in run data described above. The game does not report what
-      you tap, when you play, or how long for</li>
-  <li>No third-party SDKs or libraries</li>
+      you tap, what you look at, or anything you do outside a run. A finished run does carry how
+      long it took and when it ended — both are listed above, and both are there to read the
+      difficulty of a run rather than the habits of a player</li>
+  <li>No analytics, advertising, attribution or crash-reporting SDK of any kind. The one
+      open-source library the app is built with draws part of the interface and nothing else: it
+      holds no data, opens no connections, and is named at the top of this policy</li>
   <li>No account to create, no password, and no email address requested or stored by the app</li>
-  <li>Nothing is transmitted in the background except the opt-in run data described above, and
-      only while that switch is on</li>
+  <li>Nothing is sent to the developer in the background except the opt-in run data described
+      above, and only while that switch is on; the iCloud sync and Game Center submissions
+      described above go to Apple</li>
   <li>No access to your location, contacts, photos, camera, microphone, calendar, or health data</li>
   <li>No data is ever sold or shared with anyone</li>
+  <li>No payment details of any kind reach the developer &mdash; purchases are handled by
+      Apple, as above</li>
 </ul>
 
 <h2>Children</h2>
