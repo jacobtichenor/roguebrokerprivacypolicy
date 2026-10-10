@@ -33,8 +33,8 @@
 
 <p>Rogue Broker does not collect or transmit any personal information. There are no accounts to
 create, no advertising, and no analytics service.</p>
-<p>The app is built with one small open-source library &mdash;
-<a href="https://github.com/EmergeTools/Pow">Pow</a> &mdash; which draws some of the
+<p>The app is built with one small open-source library,
+<a href="https://github.com/EmergeTools/Pow">Pow</a>, which draws some of the
 interface's animation. It is code that ships inside the app, not a service. <strong>It does not
 collect data, contact a server, or get told anything about you.</strong> It is named here because
 an earlier version of this policy said the app contained no third-party libraries at all, and
@@ -45,7 +45,7 @@ Store</strong>; with it on, the game sends the developer a record of how each ru
 game's difficulty can be tuned against real play instead of guesswork. You can turn it off at any
 time, in Settings, and nothing further is sent. It is
 described in full under <a href="#rundata">Run data</a>. Nothing else is sent to the developer in
-the background &mdash; the only other transmissions are the iCloud sync and Game Center
+the background. The only other transmissions are the iCloud sync and Game Center
 submissions described below, and those go to Apple, not to the developer.</p>
 <p>Separately, you can choose to email the developer from inside the app. The app prepares a draft,
 you read it, you edit or delete anything you would rather not send, and you press send. The app cannot
@@ -66,13 +66,13 @@ Apple Account. The developer cannot read it, cannot access it, and receives no c
 game works exactly as it does offline, saving only to the device, and syncs by itself later if a
 connection becomes available.</p>
 <p>Deleting the app leaves that iCloud copy in your account, and it comes back if you reinstall.
-Erasing your profile in Settings deletes it too &mdash; the erase reaches the cloud copy even if
+Erasing your profile in Settings deletes it too. The erase reaches the cloud copy even if
 it has to wait for a connection.</p>
 
 <h2 id="rundata">Run data</h2>
 <p>Rogue Broker has a <strong>Share run data</strong> switch in Settings. It starts
-<strong>on</strong> if you installed the game through TestFlight — a test build exists to be
-measured, and its testers volunteered for exactly that — and <strong>off</strong> if you bought
+<strong>on</strong> if you installed the game through TestFlight (a test build exists to be
+measured, and its testers volunteered for exactly that) and <strong>off</strong> if you bought
 it from the App Store. Settings says which, on the switch itself. Turn it off and nothing
 further is recorded or sent; turn it on and it resumes.</p>
 <p>With it on, the game makes a record when a run ends. It describes the game you played, and
@@ -85,7 +85,7 @@ nothing else. In full, that is:</p>
   <li>whether you settled a level early instead of trading it to its last day</li>
   <li>which relics, devices and ship refits you bought, when, and at what in-game price, and
       which relics you still held at the end</li>
-  <li>any margin calls &mdash; the size and side of the position that caused each one, your net
+  <li>any margin calls: the size and side of the position that caused each one, your net
       worth just before and after, the leverage you were running, how many positions it closed,
       which day it landed on, and how soon it followed your last order</li>
   <li>which condition band your trader was in, and which rank you played</li>
@@ -108,8 +108,8 @@ nothing else. In full, that is:</p>
       shorts you opened, what you made or lost on closes, what you paid in spread and
       commission, your best and worst single trade, how much intel and how many rerolls you
       bought, and how many devices you actually used</li>
-  <li>which listings you traded and how each one did — including the best and worst of them by
-      percentage — named by their ticker in the game, such as BOLT or SCRP</li>
+  <li>which listings you traded and how each one did (including the best and worst of them by
+      percentage), named by their ticker in the game, such as BOLT or SCRP</li>
   <li>how long the run took in real time, measured from the first bell to the end, and the date
       and time it ended</li>
 </ul>
@@ -124,7 +124,7 @@ lets the difficulty of one fixed board be measured across the people who played 
 ordinary run it is drawn fresh each time from the clock and a random number, with nothing about
 your device or account anywhere in it, so two runs sent from one phone have no more in common
 than two runs from two phones. A seed you type yourself into the optional Seed box is
-<strong>not</strong> recorded — that box is free text, and the promise above that nothing you
+<strong>not</strong> recorded. That box is free text, and the promise above that nothing you
 typed is sent is meant literally.</p>
 <p><strong>Where it goes.</strong> The record is written to your device and also sent to the
 developer's own iCloud database, using Apple's CloudKit. It is sent when the run ends; if you have
@@ -151,8 +151,8 @@ page.</p>
 one-time pack of Data Cores. Both are handled entirely by Apple's own in-app purchase system.</p>
 <p><strong>The developer never sees your payment details.</strong> Your card, your Apple Account,
 your name and your billing address are between you and Apple; the app has no access to any of it
-and never receives it. What the app is told is whether this Apple Account owns each product —
-nothing more.</p>
+and never receives it. What the app is told is whether this Apple Account owns each product,
+and nothing more.</p>
 <p>That answer is read back from Apple each launch and each return to the app; a purchase
 follows you to a new phone because it is tied to your Apple Account, not to anything the app
 stores. The Data Core pack's credited cores live in your save file and sync through your
@@ -186,7 +186,7 @@ plays identically either way, and a score that cannot be submitted is simply not
   <li>No crash reporting and no third-party analytics service</li>
   <li>No usage tracking beyond the opt-in run data described above. The game does not report what
       you tap, what you look at, or anything you do outside a run. A finished run does carry how
-      long it took and when it ended — both are listed above, and both are there to read the
+      long it took and when it ended. Both are listed above, and both are there to read the
       difficulty of a run rather than the habits of a player</li>
   <li>No analytics, advertising, attribution or crash-reporting SDK of any kind. The one
       open-source library the app is built with draws part of the interface and nothing else: it
@@ -197,7 +197,7 @@ plays identically either way, and a score that cannot be submitted is simply not
       described above go to Apple</li>
   <li>No access to your location, contacts, photos, camera, microphone, calendar, or health data</li>
   <li>No data is ever sold or shared with anyone</li>
-  <li>No payment details of any kind reach the developer &mdash; purchases are handled by
+  <li>No payment details of any kind reach the developer: purchases are handled by
       Apple, as above</li>
 </ul>
 
